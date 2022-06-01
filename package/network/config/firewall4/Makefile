@@ -9,9 +9,9 @@ PKG_RELEASE:=$(AUTORELEASE)
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL=$(PROJECT_GIT)/project/firewall4.git
-PKG_SOURCE_DATE:=2022-02-12
-PKG_SOURCE_VERSION:=53caa1a762125a71389a486aa913e4fbdf3650cf
-PKG_MIRROR_HASH:=9052a779b12c0c9b21914bf38daf11a2d98879c2f9c9b39f091d7ebb7f0f877b
+PKG_SOURCE_DATE:=2022-05-31
+PKG_SOURCE_VERSION:=210991df51587bdb736b4fc74b1200ec6cf6ecc7
+PKG_MIRROR_HASH:=486c3fdf7201db8ae51dee7ffac1e80e7b652b27eca9a8174e0fc6f286a457fa
 PKG_MAINTAINER:=Jo-Philipp Wich <jo@mein.io>
 PKG_LICENSE:=ISC
 
@@ -26,7 +26,7 @@ define Package/firewall4
 	+kmod-nft-nat +kmod-nft-nat6 \
 	+nftables-json \
 	+ucode +ucode-mod-fs +ucode-mod-ubus +ucode-mod-uci
-  EXTRA_DEPENDS:=ucode (>= 2022-01-26)
+  EXTRA_DEPENDS:=ucode (>= 2022-03-22)
   PROVIDES:=uci-firewall
 endef
 
