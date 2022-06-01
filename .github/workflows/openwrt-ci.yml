@@ -14,7 +14,7 @@ on:
     branches: 
       - master
   schedule:
-      - cron: 30 08 * * *
+      - cron: 45 08 * * *
   release:
     types: [published]
 
@@ -53,7 +53,6 @@ jobs:
         run: |
           rm -f ./.config*
           touch ./.config
-
           #
           # ========================固件定制部分========================
           # 
